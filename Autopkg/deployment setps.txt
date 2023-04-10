@@ -1,0 +1,15 @@
+Do all things carefully,
+
+Wirte all repo,branch name in "Autopkg/lmsrelease.txt"
+
+clean deploypath.txt file make it Size0 (Error.log/deploypath.txt)
+
+clean the folder on C:\Releases\* 
+
+Uncomment all commented line in Autopkg/deploy.ps1.
+
+Now run auto.ps1 as Administetor in powershell,
+
+Check Error.log floder, all .txt file must be with 0 Size.
+
+Than run deploy.ps1 as Administetor in powershell.

@@ -1,0 +1,8 @@
+sendemailservice,develop
+justteachers,master
+matchingapi,master
+notesapi,master
+temporarystaffingapi,master
+temporarystaffingcodesystems,master
+temporarystaffingexport,master
+temporarystaffingprocessor,master
