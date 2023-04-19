@@ -32,10 +32,25 @@ for ($i=1; $i -le $lin_num; $i++) {
         Write-Output "submodule is updated"
         
         $path4 = Get-ChildItem ".\*.sln"
+        # $path5 = Get-ChildItem ".\**\*.sln"
+        # $test1 = Test-path $path4
+
+        Write-Output nuget restore 
+        Start-BitsTransfer https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
         
-        Write-Output nuget restore
-        Start-BitsTransfer https://dist.nuget.org/win-x86-commandline/latest/nuget.exe.
+        Write-Output $path4
         .\nuget.exe restore $path4 2> $Log\$repo.txt
+        
+        # if($test1 -ne "True"){
+        #     Write-Output $path5
+        #     .\nuget.exe restore $path5 2> $Log\$repo.txt
+        # }
+
+        # else {
+        #     Write-Output $path4
+        #     .\nuget.exe restore $path4 2> $Log\$repo.txt
+        # }
+        
 
      }
     
